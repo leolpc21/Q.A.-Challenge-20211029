@@ -4,7 +4,8 @@
 ## Parte 1
 
 **Framework escolhido:** Cypress
-Foi escolhido o cypress porque é uma ferramenta a qual tem uma documentação muito completa de fácil acesso e muitas comunidades a qual podemos trocar muitos conhecimentos. Ele possui um rico detalhamento de relatório de testes e possui uma versatilidade de tipos de testes.
+
+A escolha do Cypress foi realizada pelo fato da solução dispor de uma documentação completa, rica em detalhes, por haver várias comunidades de discussão sobre o uso da ferramenta e haver uma oportunidade grande de resolução de problemas complexos e desafios. Ela dispõe de uma série de oportunidades de casos de testes.
 
 - Documentação: https://docs.cypress.io/
 - Tipos de testes: 
@@ -13,4 +14,4 @@ Foi escolhido o cypress porque é uma ferramenta a qual tem uma documentação m
   - testes de integração
   - testes de unidade
 
-  Não sei dizer sobre Cucumber e Robot Framework pois não os conheço. Não escolhi o Selenium porque ele possui uma configuração mais desafiadora e o uso dos elementos para os cenários de testes são mais complexos (uso do xpath).
+Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o Selenium, pois o mesmo possui uma configuração mais custosa e o uso dos elementos nos cenários tem uma alta complexidade (uso do xpath).
