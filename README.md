@@ -15,3 +15,14 @@ A escolha do Cypress foi realizada pelo fato da solução dispor de uma document
   - testes de unidade
 
 Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o Selenium, pois o mesmo possui uma configuração mais custosa e o uso dos elementos nos cenários tem uma alta complexidade (uso do xpath).
+
+## Parte 2
+
+1- Se a página está carregando corretamente a home page;
+
+  Adicionado 2 validações na home page:
+    - Utilizando a função .request(). Onde irá validar se o status da pagina terá o retorno 200.
+    - Utilizando as funções .visit() e .url(). Onde a função visit irá visitar a página e a função url irá validar se o link está de acordo.
+
+- Foi adicionado a "baseUrl" no arquivo "cypress.config" para que fique definido a URL padrão do projeto. Desta forma, quando for necessário visitar a home, não será necessário incluir o link completo, podendo passar apenas a "/" nas funções .visit() e .request().
+- Com a funcionalidade de template strings do JavaScript, podemos obter o valor da configuração da baseUrl (através de Cypress.config().baseUrl). Com o retorno da chamada da função .url(), podemos verificar se a mesma é igual a uma URL esperada.
