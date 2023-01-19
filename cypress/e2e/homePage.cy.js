@@ -18,4 +18,15 @@ describe('Validar Home Page', () => {
       .should('be.equal', Cypress.config().baseUrl)
   });
 
+  it('Validar h1 da home page', () => {
+
+    var titulo = 'Valide seu potencial para alcançar as melhores oportunidades tech'
+
+    cy.visit('/')
+
+    cy.get('h1')
+      .contains(titulo)
+      .should("be.visible")
+  });
+
 })
