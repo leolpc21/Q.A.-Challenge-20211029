@@ -18,7 +18,7 @@ describe('Validar navegação do Login', () => {
     var email = 'invalido@gmail.com'
     var senha = 'invalido1234'
 
-    cy.intercept('GET', 'https://beta.coodesh.com/auth/signin/candidates').as('candidates')
+    cy.intercept('GET', Cypress.config().baseUrl + 'auth/signin/candidates').as('candidates')
 
     cy.visit('/auth/signin/candidates')
       .esperar('candidates', 200)
