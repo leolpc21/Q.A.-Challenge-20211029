@@ -40,7 +40,7 @@ Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o
 - Para identificar o elemento, clicamos com o botão F12 do teclado, que irá abrir as ferramentas de desenvolvimento do browser. Com ele aberto no menu Elements podemos consultar os elementos da página. Para abrir o campo de busca, clicamos dentro da pagina HTML e depois o botão CTRL + F. Quando fazemos essa busca, é importante que o resultado seja sempre 1, pois dessa forma o cypress saberá exatamente qual elemento buscar. Caso tenha mais de 1, o cyress dará um erro de duplicidade. Segue uma imagem de um exemplo de busca:
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/43275999/213571399-9348fb59-953c-4a24-b81b-40c1c10c88a5.jpeg" width="200px" />
+<img src="https://user-images.githubusercontent.com/43275999/213571399-9348fb59-953c-4a24-b81b-40c1c10c88a5.jpeg" width="500px" />
 </div>
 
 - Em alguns momentos podemos combinar dois ou mais elementos ou com a função ".contains()", para podermos garantir de que a ação será certeiro.
