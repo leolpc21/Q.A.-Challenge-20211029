@@ -39,9 +39,9 @@ Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o
 - Foi criado uma pasta pageObject e dois arquivos. O arquivo index foi criado a classe Login e onde importamos os elementos do arquivo elementos. Nele organizamos cada função feita pela automação, cliques, preenchimentos e validações. O arquivo elementos é para separar todos os elementos usados nas funções do index. Dessa forma, será mais facil fazer manutenção no código, caso seja necessário.
 - Para identificar o elemento, clicamos com o botão F12 do teclado, que irá abrir as ferramentas de desenvolvimento do browser. Com ele aberto no menu Elements podemos consultar os elementos da página. Para abrir o campo de busca, clicamos dentro da pagina HTML e depois o botão CTRL + F. Quando fazemos essa busca, é importante que o resultado seja sempre 1, pois dessa forma o cypress saberá exatamente qual elemento buscar. Caso tenha mais de 1, o cyress dará um erro de duplicidade. Segue uma imagem de um exemplo de busca:
 
-div align="center"
-img src="https://user-images.githubusercontent.com/43275999/213571399-9348fb59-953c-4a24-b81b-40c1c10c88a5.jpeg" width="200px" /
-/div
+<div align="center">
+<img src="https://user-images.githubusercontent.com/43275999/213571399-9348fb59-953c-4a24-b81b-40c1c10c88a5.jpeg" width="200px" />
+</div>
 
 - Em alguns momentos podemos combinar dois ou mais elementos ou com a função ".contains()", para podermos garantir de que a ação será certeiro.
 - Os elementos mais recomendado são: id e classe. O id dentro do arquivo elementos é idenficiado pelo simbolo hashtag (#) ex: "#email", já a classe pelo ponto (.) ex: ".banner-content". 
