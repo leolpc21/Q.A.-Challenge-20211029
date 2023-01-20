@@ -20,7 +20,7 @@ Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o
 
 1- Se a página está carregando corretamente a home page;
 
-  Adicionado 3 validações na home page:
+  Adicionado 3 testes na home page:
 
 1. A função ".request()" irá validar se o status da pagina terá o retorno 200.
 2. A função ".visit()" irá visitar a página e a função ".url()" irá validar se o link está de acordo.
@@ -31,7 +31,7 @@ Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o
 
 2- Navegar pela página de login no menu superior;
 
-  Adicionado 2 validações no login:
+  Adicionado 2 testes no login:
 
 1. A função ".click()" na home page clica no botão Login e posteiormente terá uma validação da url.
 2. A função ".intercept()" simula o atraso de uma requisão, fazendo com que o teste continue após a conclusão da requisição. A função ".esperar()" foi criada a partir do arquivo commands, onde ele recebe a requisição do intercept e o status de conclusão. Quando é atingido o status o teste passa para o próximo comando. A função ".clicarBotaoOKBanner()", clica no botão OK do banner. A função ".preencherCampoEmail()" recebe um valor e faz o preenchimento do campo de Email. A função ".preencherCampoSenha()" recebe um valor e faz o preenchimento do campo da Senha. A função ".clicarBotaoEntrar()" clica no botão Entrar. A função ".validarAlerta()" valida a mensagem de alerta. A função ".type()" "escreve" nos campos de input.
@@ -46,4 +46,10 @@ Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o
 - Em alguns momentos podemos combinar dois ou mais elementos ou com a função ".contains()", para podermos garantir de que a ação será certeiro.
 - Os elementos mais recomendado são: id e classe. O id dentro do arquivo elementos é idenficiado pelo simbolo hashtag (#) ex: "#email", já a classe pelo ponto (.) ex: ".banner-content". 
 
+3- Agora o seu sistema de teste automatizado deverá criar uma conta para o perfil de pessoas candidatas;
 
+Adicionado 1 teste de cadastro
+
+1. A função ".functionDadosUser()" foi criada no arquivo index dentro da pasta utils. Ela é responsável por consumir a API, pegando os dados de usuário para o cadastro e sendo armazenado na variável "dadosUser". A função ".clicarBotaoCriarConta()" clica no botão "Criar Conta". As funções ".preencherCampoNome()", ".preencherCampoEmail()" e ".preencherCampoSenha()" recebem um dado que está armazenado na variável "dadosUser" e preenchem os campos determinados a cada uma. A função ".clicarBotaoAceiteTermo()" marca como ativo o aceite dos termos através da função ".check()". A função ".clicarBotaoInscrevaSe()" clica no botão "Inscreva-se".
+
+- A função ".home()" foi criada no arquivo commands para definir um padrão de acesso a home, pois assim não é necessário repetir os mesmos codigos em todos os testes.
