@@ -4,5 +4,21 @@ exports.elemento = {
   inputSenha: '#password',
   inputNome: '#displayName',
   buttonAceiteTermo: 'input[id*="privacy"]',
-  buttonInscrever: 'button[type=submit]'
+  buttonSubmit: 'button[type=submit]',
+  inputCarreira: '.checkbox-outline',
+  buttonHabilidade: '.text-muted .badge-primary',
+  selectExperiencia: '#years_experience',
+  selectMomento: 'select[id*="preferences"]',
+  inputTelefone: 'input[type="tel"]',
+  inputCidade: 'input[id="address.city"]',
+  inputPreferenciaVaga: '.form-group .form-check',
+  buttonProximo: 'button[type="button"]',
+  buttonComunidade: '.active span[class*=badge-bigger]',
+  selectRelacao: '.custom-select',
+  inputCausasSociais: '.react-select',
+  formCausaSociais: '.form-group',
+  selectRaca: '#race',
+  selectGenero: '#gender',
+  selectOrientacaoSexual: '#sexual_orientation',
+  selectDeficiencia: 'select[id*="disabilities"]'
 };
