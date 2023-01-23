@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 import login from "../pageObject/login";
+import genericsUtils from "../support/utils";
 
 describe('Validar navegação do Login', () => {
 
@@ -15,8 +16,7 @@ describe('Validar navegação do Login', () => {
 
   it('Validar login incorreto', () => {
 
-    var email = 'invalido@gmail.com'
-    var senha = 'invalido1234'
+    var dadosUser = genericsUtils.functionDadosUser()
 
     cy.intercept('GET', Cypress.config().baseUrl + 'auth/signin/candidates').as('candidates')
 
@@ -25,8 +25,8 @@ describe('Validar navegação do Login', () => {
 
     login.clicarBotaoOKBanner()
 
-    login.preencherCampoEmail(email)
-    login.preencherCampoSenha(senha)
+    login.preencherCampoEmail(dadosUser.email)
+    login.preencherCampoSenha(dadosUser.senha)
     login.clicarBotaoEntrar()
     login.validarAlerta()
 

@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "cy:run": "cypress run --browser chrome",
+    "cy:cadastro": "npx cypress run --browser chrome --spec cypress/e2e/pageCadastro.cy.js",
+    "cy:home": "npx cypress run --browser chrome --spec cypress/e2e/pageHome.cy.js",
+    "cy:login": "npx cypress run --browser chrome --spec cypress/e2e/pageLogin.cy.js",
+    "cy:vagas": "npx cypress run --browser chrome --spec cypress/e2e/pageVagas.cy.js"
+  },
   "devDependencies": {
     "cypress": "^12.3.0"
   }
