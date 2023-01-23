@@ -10,11 +10,11 @@ class Login {
   }
 
   preencherCampoEmail(email) {
-    cy.get(elemento.inputEmail).type(email);
+    cy.get(elemento.inputEmail).type(email, { log: false })
   }
 
   preencherCampoSenha(senha) {
-    cy.get(elemento.inputSenha).type(senha);
+    cy.get(elemento.inputSenha).type(senha, { log: false })
   }
 
   clicarBotaoEntrar() {

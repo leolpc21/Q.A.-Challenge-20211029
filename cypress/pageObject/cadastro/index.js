@@ -52,7 +52,8 @@ class Cadastro {
 
   selecionarExperiencia(experiencia) {
     cy.get(elemento.selectExperiencia)
-      .select(experiencia)
+      .contains(experiencia)
+      .click()
   }
 
   selecionarMomentoProfissional(momento) {
@@ -78,10 +79,12 @@ class Cadastro {
 
   clicarBotaoProximo() {
     cy.intercept('GET', 'https://api.beta.coodesh.com/scorecards/user/**').as('user')
+    cy.intercept('PUT', 'https://api.beta.coodesh.com/user/me').as('me')
     cy.get(elemento.buttonProximo)
       .contains('Próximo')
       .should('be.visible')
       .click()
+      .esperar('me', 200)
       .esperar('user', 200)
   }
 
@@ -132,7 +135,7 @@ class Cadastro {
 
   selecionarNivelConhecimento(habilidade, nivel) {
     cy.contains('tr', habilidade)
-      .find(`span[style*='left: ${nivel}']`)
+      .find(elemento.selectNivelConhecimento + `${nivel}"]`)
       .click()
   }
 

@@ -7,7 +7,7 @@ exports.elemento = {
   buttonSubmit: 'button[type=submit]',
   inputCarreira: '.checkbox-outline',
   buttonHabilidade: '.text-muted .badge-primary',
-  selectExperiencia: '#years_experience',
+  selectExperiencia: '.tab-content div[class="row"] div[class*="mt-3"]',
   selectMomento: 'select[id*="preferences"]',
   inputTelefone: 'input[type="tel"]',
   inputCidade: 'input[id="address.city"]',
@@ -20,5 +20,6 @@ exports.elemento = {
   selectRaca: '#race',
   selectGenero: '#gender',
   selectOrientacaoSexual: '#sexual_orientation',
-  selectDeficiencia: 'select[id*="disabilities"]'
+  selectDeficiencia: 'select[id*="disabilities"]',
+  selectNivelConhecimento: 'span[style*="left: '
 };
