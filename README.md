@@ -1,11 +1,9 @@
 
 <a href="https://lab.coodesh.com/leolpc21/q-a-challenge-20211029">Desafio referente</a>
+<br>
 <a href="https://www.loom.com/embed/3eceb4e4000543858277e09187968386">Link apresentação</a>
+<br>
 <a href="https://github.com/leolpc21/Q.A.-Challenge-20230127/files/10512697/Apresentacao.projeto.pptx">PPT apresentação</a>
-
-### Desafio referente: https://lab.coodesh.com/leolpc21/q-a-challenge-20211029
-### Link apresentação: https://www.loom.com/embed/3eceb4e4000543858277e09187968386
-### PPT apresentação: https://github.com/leolpc21/Q.A.-Challenge-20230127/files/10512697/Apresentacao.projeto.pptx
 
 ## Parte 1
 
