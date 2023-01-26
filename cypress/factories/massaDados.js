@@ -45,7 +45,7 @@ export default {
         indigena: 'Pessoa Indígena',
         naoDizer: 'Prefiro não dizer'
       },
-      IdentidadeGenero: {
+      identidadeGenero: {
         homem: 'Homem',
         mulher: 'Mulher',
         homemTrans: 'Homem Trans',
