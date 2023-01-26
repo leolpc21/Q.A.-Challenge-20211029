@@ -30,9 +30,9 @@ class Login {
       .click()
   }
 
-  validarAlerta() {
+  validarAlerta(mensagem) {
     cy.get(elemento.toast)
-      .contains('Usuário não encontrado')
+      .contains(mensagem)
       .should('be.visible')
   }
 }

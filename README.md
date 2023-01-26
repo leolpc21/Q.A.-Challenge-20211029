@@ -1,5 +1,9 @@
 
-### Desafio referente: https://lab.coodesh.com/leolpc21/q-a-challenge-20211029
+<a href="https://lab.coodesh.com/leolpc21/q-a-challenge-20211029">Desafio referente</a>
+<br>
+<a href="https://www.loom.com/embed/3eceb4e4000543858277e09187968386">Link apresentação</a>
+<br>
+<a href="https://github.com/leolpc21/Q.A.-Challenge-20230127/files/10512697/Apresentacao.projeto.pptx">PPT apresentação</a>
 
 ## Parte 1
 
@@ -34,7 +38,7 @@ Sobre o Cucumber e Robot Framework, não tenho discernimento sobre. Não optei o
   Adicionado 2 testes no login:
 
 1. A função ".click()" na home page clica no botão "Login" e posteiormente terá uma validação se foi para a url correta.
-2. A função ".intercept()" simula o atraso de uma requisão, fazendo com que o teste continue após a conclusão da requisição. A função ".esperar()" foi criada a partir do arquivo commands, onde ele recebe a requisição do intercept e o status de conclusão. Quando é atingido o status, o teste passa para o próximo comando. A função ".clicarBotaoOKBanner()", clica no botão "OK" do banner. A função ".preencherCampoEmail()" recebe um valor e faz o preenchimento do campo de Email. A função ".preencherCampoSenha()" recebe um valor e faz o preenchimento do campo da Senha. A função ".clicarBotaoEntrar()" clica no botão "Entrar". A função ".validarAlerta()" valida a mensagem de alerta. A função ".type()" "escreve" nos campos de input.
+2. A função ".intercept()" simula o atraso de uma requisão, fazendo com que o teste continue após a conclusão da requisição. A função ".esperar()" foi criada a partir do arquivo commands, onde ele recebe a requisição do intercept e o status de conclusão. Quando é atingido o status, o teste passa para o próximo comando. A função ".clicarBotaoOKBanner()", clica no botão "OK" do banner. A função ".preencherCampoEmail()" recebe um valor e faz o preenchimento do campo de Email. A função ".preencherCampoSenha()" recebe um valor e faz o preenchimento do campo da Senha. A função ".clicarBotaoEntrar()" clica no botão "Entrar". A função ".validarAlerta()" recebe um valor e valida a mensagem de alerta. A função ".type()" "escreve" nos campos de input.
 
 - Foi criado a pasta "pageObject" e dentro dela a pasta "login". Nele organizamos cada função feita pela automação, cliques, preenchimentos e validações. O arquivo "elementos" é para separar todos os elementos usados nas funções do "index". Dessa forma, será mais facil fazer manutenção no código, caso seja necessário.
 - Para identificar o elemento, clicamos com o botão F12 do teclado, que irá abrir as ferramentas de desenvolvimento do browser. Com ele aberto no menu "Elements" podemos consultar os elementos da página. Para abrir o campo de busca, clicamos dentro da pagina HTML e depois o botão CTRL + F. Quando fazemos essa busca, é importante que o resultado seja sempre 1, pois dessa forma o cypress saberá exatamente qual elemento buscar. Caso tenha mais de 1, o cyress dará um erro de duplicidade. Segue uma imagem de um exemplo de busca:
@@ -83,4 +87,3 @@ Adicionado 1 teste de busca
 - Para que os dados de login e senha não apareçam no log do cypress, basta incluir o "{log: false}" junto aos dados na função ".type()", como por exemplo ".type(email, { log: false })".
 
 - Cadastro e Login via API.
-

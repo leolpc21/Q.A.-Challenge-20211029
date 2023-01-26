@@ -28,7 +28,7 @@ describe('Validar navegação do Login', () => {
     login.preencherCampoEmail(dadosUser.email)
     login.preencherCampoSenha(dadosUser.senha)
     login.clicarBotaoEntrar()
-    login.validarAlerta()
+    login.validarAlerta('Usuário não encontrado')
 
   });
 })

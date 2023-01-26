@@ -111,7 +111,7 @@ describe('Criar cadastro de pessoa candidata', () => {
     cadastro.selecionarCausasSociais(dados.causasSociais.causaUmLGBT)
     cadastro.selecionarCausasSociais(dados.causasSociais.causaDoisLGBT)
     cadastro.selecionarRaca(dados.racaCor.branca)
-    cadastro.selecionarIdentidadeGenero(dados.IdentidadeGenero.homem)
+    cadastro.selecionarIdentidadeGenero(dados.identidadeGenero.homem)
     cadastro.selecionarOrientacaoSexual(dados.orientacaoSexual.homossexual)
     cadastro.selecionarDeficiencia(dados.deficiencia.nenhuma)
     cadastro.clicarBotaoProximo()
